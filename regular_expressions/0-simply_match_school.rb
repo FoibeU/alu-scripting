@@ -6,9 +6,9 @@ if ARGV.empty?
 end
 input = ARGV[0]
 pattern = /School/
-match = input.match(pattern)
+match = input.scan(pattern)
 if match
-  puts "Match found : #{match}"
+  puts "#{match.join()}"
 else
-  puts "no match found"
+  puts ""
 end
