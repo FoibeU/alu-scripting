@@ -5,7 +5,7 @@ if ARGV.empty?
   exit
 end
 input = ARGV[0]
-pattern = /hb[t]{1,4}n/
+pattern = /hb[t]{1,10}n/
 matches = input.scan(pattern)
 if matches
   puts "#{matches.join()}"
