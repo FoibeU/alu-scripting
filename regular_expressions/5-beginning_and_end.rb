@@ -6,10 +6,10 @@ if ARGV.empty?
 end
 input = ARGV[0]
 pattern = /^h.n$/
-if input.match?(pattern)
-  puts "Input macthes"
+matches = input.match(pattern)
+if matches
+  puts "#{matches}"
 else
-  puts "Input doesn't match"
+  puts ""
   exit
 end
-
