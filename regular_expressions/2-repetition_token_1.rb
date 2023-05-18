@@ -6,7 +6,7 @@ if ARGV.empty?
 end
 
 input = ARGV[0]
-pattern = /h[b?][t]n/
+pattern =/\bh?[bt]{1,3}n\b/
 matches = input.scan(pattern)
 if matches
   puts "#{matches.join()}"
