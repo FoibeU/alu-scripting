@@ -8,7 +8,7 @@ input = ARGV[0]
 pattern = /\[from:(.*?)\] \[to:(.*?)\] \[flags:(.*?)\]/
 matches = input.scan(pattern)
 if matches
-  puts "#{matches.join()}"
+  puts "#{matches.join(', ')}"
 else
   puts ""
   exit
