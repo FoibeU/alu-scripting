@@ -5,7 +5,7 @@ if ARGV.empty?
   exit
 end
 input = ARGV[0]
-pattern = /^[A-Z]+$/
+pattern = /([A-Z])*/
 matches = input.match(pattern)
 if matches
   puts "#{matches}"
