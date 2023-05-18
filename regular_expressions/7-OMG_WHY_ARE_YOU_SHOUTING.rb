@@ -5,10 +5,10 @@ if ARGV.empty?
   exit
 end
 input = ARGV[0]
-pattern = /([A-Z])*/
-matches = input.match(pattern)
+pattern =/[A-Z]/
+matches = input.scan(pattern)
 if matches
-  puts "#{matches}"
+  puts "#{matches.join}"
 else
   puts""
   exit
